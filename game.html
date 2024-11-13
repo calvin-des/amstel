@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Amstel Radler</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png"/>
+    <link rel="stylesheet" href="https://use.typekit.net/xio8ivq.css">
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap_theme/bootstrap.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet"/>
+    <script>
+        /* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()
+    </script>
+</head>
+<body class="game-background">
+    <section class="main">
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-md">
+                </div>
+                <div class="bg-dark col-12 col-md-12" style="background-color: #003CA5 !important;">
+                    <div class="container-fluid time-holder">
+                        <div class="countdown-timer">
+                            <div class="time-unit">
+                                <span class="label">min</span><span id="minutes">5</span>
+                            </div>
+                            <span>:</span>
+                            <div class="time-unit">
+                                <span class="label">sec</span><span id="seconds">00</span>
+                            </div>
+                            <span>:</span>
+                            <div class="time-unit">
+                                <span class="label">msec</span><span id="milliseconds">00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" timer-ribbon"><img src="assets/timer-bg-mobile-short.png" class="hero-mobile"/><img src="assets/timer-bg-desktop-short.png" class="hero-desktop"/>
+                    </div>
+                    
+
+                </div>
+                
+                <div class="lemon-driper">
+                        <img src="assets/lemon-row.png" class=""/>
+                    </div><div class="col-md">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid body-content">
+
+            <div class="modal pg-show-modal" id="lemonDropModal" tabindex="-1" data-bs-backdrop="true" data-bs-focus="false" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="custom-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <h1 class="modal-title">IT'S RAINING LEMON DROPS!</h1>
+                            </div>
+                            <div class="modal-body">
+                                <h3>HOW TO PLAY</h3>
+                                <p>Move your Amstel Lager bottle to capture as many lemon drops as you can, transforming your
+                            Lager into a Radler before time runs out!</p>
+                                <h3 class="mt-3">RULES:</h3>
+                                <ul>
+                                    <li>Missing drops will deduct (X) seconds/milliseconds from your countdown.</li>
+                                    <li>Catching drops will add (X) seconds/milliseconds from your countdown.</li>
+                                    <li>Fill up the progress bar to be a potential prize winner</li>
+                                    <li>The drops will fall faster the longer you play.</li>
+                                </ul>
+                            </div>
+                            <div class="border-top-0 modal-footer">
+                                <button type="button" class="btn btn-lg btn-primary mb-2 me-0 ms-0 mt-0 mx-0  w-100">GET STARTED
+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="row">
+                <div class="container game-sidebar">
+                    <div class="bottle-display">
+                        <img src="assets/game%20elements/amstel-radler-drops.png"/>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-animated w-75" id="amstel-conversion" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="bottle-display">
+                        <img src="assets/game%20elements/amstel-lager.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-area">
+        <div class="container-fluid decoration" style="bottom: 0 !important;">
+            <div id="desktop">
+                <img src="assets/lemonslices-desktop.png" class="footer-elements" id="desktop"/>
+            </div>
+            <div id="mobile">
+                <img src="assets/lemonslices-mobile.png" class="footer-elements" id="mobile"/>
+            </div>
+        </div><div class="container-fluid footer">
+            <div id="desktop">
+                <img src="assets/ara-line-desktop.png" alt="ara-line" class="" style="width:100%;"/>
+            </div>
+            <div id="mobile">
+                <img src="assets/ara-line-mobile.png" alt="ara-line" class="" style="width:100%;"/>
+            </div>
+        </div>
+    </section>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="pgia/lib/pgia.js"></script>
+    <script>
+        // Initialize countdown time (5 minutes)
+    let countdownTime = 5 * 60 * 1000; // 5 minutes in milliseconds
+
+    function startCountdown() {
+        const minutesElement = document.getElementById("minutes");
+        const secondsElement = document.getElementById("seconds");
+        const millisecondsElement = document.getElementById("milliseconds");
+
+        const interval = setInterval(() => {
+            if (countdownTime <= 0) {
+                clearInterval(interval);
+                return;
+            }
+
+            // Update the countdown time
+            countdownTime -= 10; // Update every 10 milliseconds
+
+            // Calculate minutes, seconds, and milliseconds
+            const minutes = Math.floor(countdownTime / (60 * 1000));
+            const seconds = Math.floor((countdownTime % (60 * 1000)) / 1000);
+            const milliseconds = Math.floor((countdownTime % 1000) / 10);
+
+            // Display the countdown
+            minutesElement.textContent = minutes;
+            secondsElement.textContent = seconds < 10 ? "0" + seconds : seconds;
+            millisecondsElement.textContent = milliseconds < 10 ? "0" + milliseconds : milliseconds;
+        }, 10); // Update every 10 milliseconds
+    }
+
+    // Start the countdown on page load
+    window.onload = startCountdown;
+    </script>
+
+<!-- modal pop-up -->
+      <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var lemonDropModal = new bootstrap.Modal(document.getElementById('lemonDropModal'));
+      lemonDropModal.show();
+    });
+  </script>
+</body>
+
+</html>
